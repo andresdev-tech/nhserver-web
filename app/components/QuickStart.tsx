@@ -1,4 +1,4 @@
-export default function QuickStart(): JSX.Element {
+export default function QuickStart() {
   const code = `const nhserver = require('nhserver');
 
 const app = nhserver();

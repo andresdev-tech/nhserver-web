@@ -1,4 +1,4 @@
-export default function Stats(): JSX.Element {
+export default function Stats() {
   return (
     <div className="flex justify-center gap-12 py-10 px-8 border-t border-b border-[#2A2F38]">
       <div className="text-center">

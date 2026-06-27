@@ -1,4 +1,4 @@
-export default function APIReference(): JSX.Element {
+export default function APIReference() {
   return (
     <section id="api" className="max-w-[900px] mx-auto px-8 py-20">
       <p className="font-mono text-xs text-[#7C6AFF] uppercase tracking-[0.1em] mb-3">

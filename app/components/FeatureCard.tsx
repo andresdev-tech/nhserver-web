@@ -4,7 +4,7 @@ interface FeatureCardProps {
   description: string;
 }
 
-export default function FeatureCard({ icon, title, description }: FeatureCardProps): JSX.Element {
+export default function FeatureCard({ icon, title, description }: FeatureCardProps) {
 
   return (
     <div className="bg-[#13161A] p-7">

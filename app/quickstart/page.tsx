@@ -2,7 +2,7 @@ import Sidebar from '../components/Sidebar';
 import QuickStart from '../components/QuickStart';
 import Footer from '../components/Footer';
 
-export default function QuickStartPage(): JSX.Element {
+export default function QuickStartPage() {
   return (
     <div className="bg-[#0D0F12] text-white min-h-screen">
       <Sidebar />

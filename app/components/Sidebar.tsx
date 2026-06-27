@@ -9,7 +9,7 @@ interface NavItem {
   label: string;
 }
 
-export default function Sidebar(): JSX.Element {
+export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -78,7 +78,7 @@ export default function Sidebar(): JSX.Element {
 
           <div className="mt-8 pt-6 border-t border-[#2A2F38]">
             <a
-              href="https://github.com/SrAndres6/NHServer"
+              href="https://github.com/andresdev-tech/NHServer"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-[#8892A4] hover:text-white transition-colors"

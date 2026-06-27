@@ -1,6 +1,6 @@
 import FeatureCard from './FeatureCard';
 
-export default function Features(): JSX.Element {
+export default function Features() {
   return (
     <section className="max-w-[900px] mx-auto px-8 py-20">
       <p className="font-mono text-xs text-[#7C6AFF] uppercase tracking-[0.1em] mb-3">

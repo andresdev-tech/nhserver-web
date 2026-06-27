@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function Hero(): JSX.Element {
+export default function Hero() {
   const [copied, setCopied] = useState(false);
 
   const copyInstall = () => {
