@@ -1,37 +1,53 @@
-import Link from "next/link";
+import Link from 'next/link';
+import Sidebar from './components/Sidebar';
+import Hero from './components/Hero';
+import Stats from './components/Stats';
+import Footer from './components/Footer';
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center bg-[#0D0F12] text-white">
-      <nav className="w-full h-20">
+    <div className="bg-[#0D0F12] text-white min-h-screen">
+      <Sidebar />
+      <main className="lg:ml-64">
+        <Hero />
+        <Stats />
         
-      </nav>
-
-      <main className="w-full h-full flex flex-col items-center justify-center gap-4 text-center">
-        <h1 className="text-1xl font-bold text-[#7C6AFF]">NODE.JS WEB FRAMEWORK</h1>
-        <p className="text-4xl font-bold">Build APIs faster. Ship with <span className='text-[#A78BFA]'>zero deps</span>.</p>
-        <p className='text-xl text-gray-400'>NHServer es un micro-framework web para Node.js — enrutamiento, middleware integrado y respuestas estructuradas. Sin dependencias externas.</p>
-
-
-        <div className='flex gap-4 p-6 m-4'>
-
-          <Link href={''} className='bg-[#7C6AFF] h-15 w-40 rounded-2xl cursor-pointer'>
-            Get started
-          </Link>
-
-          <Link href='https://github.com/andresdev-tech/nhserver' className='text-center rounded-2xl border-4 border-[#2A2F38] h-15 w-40 cursor-pointer'>
-            View on GitHub
-          </Link>
-        </div>
-
-        <div>
-
-        </div>
+        <section className="max-w-[900px] mx-auto px-8 py-20">
+          <p className="font-mono text-xs text-[#7C6AFF] uppercase tracking-[0.1em] mb-3">
+            Explorar
+          </p>
+          <h2 className="text-[1.8rem] font-semibold mb-3 tracking-[-0.02em]">
+            Conoce más sobre NHServer.
+          </h2>
+          <p className="text-[#8892A4] mb-10 max-w-[540px]">
+            Descubre todas las características, middleware, API reference y el roadmap del proyecto.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/features" className="bg-[#13161A] border border-[#2A2F38] rounded-[10px] p-6 hover:border-[#7C6AFF] transition-colors">
+              <h3 className="text-lg font-medium mb-2">Features</h3>
+              <p className="text-sm text-[#8892A4]">Enrutamiento, middleware, cero dependencias y más.</p>
+            </Link>
+            <Link href="/quickstart" className="bg-[#13161A] border border-[#2A2F38] rounded-[10px] p-6 hover:border-[#7C6AFF] transition-colors">
+              <h3 className="text-lg font-medium mb-2">Quick Start</h3>
+              <p className="text-sm text-[#8892A4]">De cero a servidor en 10 líneas de código.</p>
+            </Link>
+            <Link href="/middleware" className="bg-[#13161A] border border-[#2A2F38] rounded-[10px] p-6 hover:border-[#7C6AFF] transition-colors">
+              <h3 className="text-lg font-medium mb-2">Middleware</h3>
+              <p className="text-sm text-[#8892A4]">CORS, logger, bodyParser y secureHeaders incluidos.</p>
+            </Link>
+            <Link href="/api" className="bg-[#13161A] border border-[#2A2F38] rounded-[10px] p-6 hover:border-[#7C6AFF] transition-colors">
+              <h3 className="text-lg font-medium mb-2">API Reference</h3>
+              <p className="text-sm text-[#8892A4]">Documentación completa de Request y Response.</p>
+            </Link>
+            <Link href="/roadmap" className="bg-[#13161A] border border-[#2A2F38] rounded-[10px] p-6 hover:border-[#7C6AFF] transition-colors">
+              <h3 className="text-lg font-medium mb-2">Roadmap</h3>
+              <p className="text-sm text-[#8892A4]">Lo que viene en futuras versiones de NHServer.</p>
+            </Link>
+          </div>
+        </section>
+        
+        <Footer />
       </main>
-
-      <footer className="w-full h-20 flex items-center justify-center">
-        <p className="text-sm text-gray-400">Copyright 2026 NHServer</p>
-      </footer>
     </div>
   );
 }
