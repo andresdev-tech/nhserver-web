@@ -28,7 +28,7 @@ export default function Hero() {
         <a href="#quickstart" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-[10px] text-sm font-medium bg-[#7C6AFF] text-white border border-[#7C6AFF] hover:bg-[#A78BFA] hover:border-[#A78BFA] transition-all">
           Comenzar →
         </a>
-        <a href="https://github.com/SrAndres6/NHServer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-[10px] text-sm font-medium bg-transparent text-white border border-[#2A2F38] hover:border-[#8892A4] transition-all">
+        <a href="https://github.com/andresdev-tech/NHServer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-[10px] text-sm font-medium bg-transparent text-white border border-[#2A2F38] hover:border-[#8892A4] transition-all">
           Ver en GitHub
         </a>
       </div>
